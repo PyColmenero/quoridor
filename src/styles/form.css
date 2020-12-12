@@ -1,0 +1,99 @@
+#login{
+    padding: 5rem 2rem;
+}
+    #login h2{
+        text-align: center;
+    }
+    input, button{
+        margin: .5rem 0;
+        padding: .5rem;
+        width: 100%;
+        border: 0;
+
+        box-sizing: border-box;
+    }
+    button{
+        background-color: rgb(56, 0, 0);
+        color: beige;
+    }
+
+
+#created_room{
+    min-height: 80vh;
+    width: 90vw;
+    margin: 0 auto;
+
+    align-items: center;
+    justify-content: space-around;
+}
+    #created_room > div{
+        padding: 1rem;
+        background-color: white;
+        border-radius: 10px;
+
+        box-shadow:  3px 3px 5px rgba(0, 0, 0, 0.3);
+    }
+        #key{
+            font-weight: 100;
+            padding: .5rem .8rem;
+            border-radius: 5px;
+            background-color: whitesmoke;
+            margin-left: 1rem;
+            letter-spacing: 3px;
+
+            box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.5);
+        }
+        #created_room h5{
+            font-size: .8rem;
+            text-align: center;
+            margin: 4rem 0 0 0;
+        }
+
+    #free_rooms{
+        padding-top: 2rem;
+    }
+        #tittle_fr{
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 3rem 0 0 0;
+        }
+        .room{
+            padding: .3rem .6rem;
+            margin-bottom: .5rem;
+
+            border-radius: 5px;
+            border: 1px solid rgb(21, 21, 21);
+            background-color: rgb(26, 26, 26);
+        
+            display: flex;
+            justify-content: space-between;
+            
+            box-shadow:  3px 3px 5px rgba(0, 0, 0, 0.3);
+        }
+            .room > p{
+                margin: 0;
+                color: aliceblue;
+            }
+            .join_button{
+                background-color: rgb(16, 90, 202);
+                color: aliceblue;
+                border-radius: 5px;
+                padding: 0 .6rem;
+            }
+            .join_button:hover{
+                background-color: rgb(0, 53, 133);
+            }
+
+
+#all > h4{
+    text-align: center;
+    font-weight: 100;
+    margin: .5rem 0;
+}
+#status{
+    font-size: 1.5rem;
+}
+.loading_text{
+    color: red;
+}

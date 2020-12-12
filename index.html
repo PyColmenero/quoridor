@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Quoridor </title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="src/styles/general.css">
+        <link rel="stylesheet" href="src/styles/form.css">
+        <link rel="stylesheet" href="src/styles/game.css">
+
+        <link rel="stylesheet" href="src/styles/wall.css">
+
+
+    </head>
+    <body>
+
+        
+
+        <div id="login">
+            <h2>Create/Join a room</h2>
+            <input type="text" placeholder="Nombre de usuario..." name="username" id="username">
+            <input type="text" placeholder="Clave (deja vacio para crear una sala)" name="key" id="key_in">
+            <button id="play_button"> Play</button>
+            <p class="error"></p>
+
+
+            <div id="rooms">
+                <p id='tittle_fr'>Free rooms</p>
+                <div id="free_rooms">
+                    <div class="loading_gif"></div>
+                </div>
+            </div>
+
+        </div>
+        <div id="created_room" style="display: none;">
+            <div>
+                <h3 id="game_created_username">Game created!</h3>
+                <h4 id="game_created_key">Key: </h4>
+                <h5>Waiting for other player...</h5>
+            </div>
+            
+        </div>
+
+        <div id="gameover" style="display: none;">
+            <p id="game_over">You won</p>
+        </div>
+
+        <div id="all" style="display: none;">
+            
+            <h1>Quoridor</h1>
+
+            <div id="game">
+
+                <div id="table">
+                    
+                    
+
+                    <div class="padding" id="table_padding_up">
+                        <div id="table_padd_up"></div>
+                        <img id="img_square_left" src="src/medias/3.png" alt=""> <img id="img_square_right" src="src/medias/4.png" alt=""> 
+                    </div>
+
+                    <div id="table_map">
+                        <div id="generate_table"></div>
+                        <div id="walls"></div>
+                        <div id="players">
+                            <div id="own_player"></div>
+                            <div id="ownt_player"></div>
+                        </div>
+                    </div>
+
+                    <div class="padding" id="table_padding_down"></div>
+
+                </div>
+
+            </div>
+
+            <h4 class="loading_text"></h4>
+            <h4 id="status"></h4>
+            <h4 id="players_s"></h4>
+            
+            
+
+        </div>
+        
+        
+
+        <script src="socket.io/socket.io.js"></script>
+
+        <script src="src/js/main.js"></script>
+        <script src="src/js/form.js"></script>
+        <script src="src/js/start_game.js"></script>
+        <script src="src/js/show_available_rooms.js"></script>
+
+        <script src="src/js/generate_table.js"></script>
+        <script src="src/js/update_pieces.js"></script>
+
+        <script src="src/js/generate_walls.js"></script>
+        <script src="src/js/set_wall.js"></script>
+
+        <script src="src/js/player_movement.js"></script>
+        <script src="src/js/set_players.js"></script>
+
+        <script src="./src/js/url_data.js"></script>
+
+    </body>
+</html>

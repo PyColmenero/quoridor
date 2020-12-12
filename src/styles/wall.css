@@ -1,0 +1,10 @@
+.sblock[data-selec]{
+    background-color: rgb(255, 247, 0) !important;
+    z-index: 8 !important;
+}
+
+.big_block[jump]{
+    background-color: rgb(123, 123, 123) !important;
+    /*z-index: 8 !important;*/
+}
+

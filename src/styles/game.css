@@ -1,0 +1,138 @@
+
+
+#all{
+    height: 100vh;
+   
+}
+
+#game{
+
+}   
+    #table{
+        /* border: 2px solid rgb(20, 20, 20); */
+    }
+        .padding, #table_padd_up{
+            width: 100%;
+            height: calc( 95vw / 46 * 10 );
+            background-color: rgb(20, 20, 20);
+
+            display: flex;
+            position: relative;
+        }
+            #img_square_left{
+                width: auto;
+                position: absolute;
+                z-index: 10;
+                width: 20%;
+
+                transform: translate(-20%, -30%);
+            }
+            #img_square_right{
+                width: auto;
+                position: absolute;
+                z-index: 10;
+                width: 20%;
+
+                right: 0;
+
+                transform: translate(30%, -25%) rotate(10deg);
+
+            }
+        
+        #table_map{
+            width: 100%;
+
+            position: relative;
+            background-color: white;
+        }
+            .cube{
+                /* height: calc(95vw/9);
+                width: calc(95vw/9); */
+                display: flex;
+            }
+                .inner_wall{
+                    z-index: 6;
+                }
+                .inner_block{
+                    z-index: 5;
+                }
+                    .tinny_block{
+                        width: calc( 95vw / 46 * 1 );
+                        height: calc( 95vw / 46 * 1 );
+                    }
+                    .v_block{
+                        width: calc( 95vw / 46 * 4 );
+                        height: calc( 95vw / 46 * 1 );
+                    }
+                    .h_block{
+                        width: calc( 95vw / 46 * 1 );
+                        height: calc( 95vw / 46 * 4 );
+                    }
+                    .big_block{
+                        height: calc( 95vw / 46 * 4 );
+                        width: calc( 95vw / 46 * 4 );
+                        background-color: rgb(20, 20, 20);
+
+                        box-shadow: -1px -1px 5px black;
+                    }
+                    
+                    .v_block:hover, .h_block:hover{
+                        background-color: rgb(116, 115, 115);
+                    }
+                    .tinny_block, .v_block, .h_block{
+                        background-color: rgb(255, 255, 255);
+                    }
+                    #wall_selected{
+                        background-color: red;
+                    }
+
+    .padding_wall{
+        margin-top: calc( 95vw / 46 * .5 );
+        height: calc( 95vw / 46 * 9 );
+        width: calc( 95vw / 46 );
+
+        margin-right: calc( 95vw / 46 * 4 );
+
+        background-color: rgb(235, 235, 128);
+
+        z-index: 6;
+    }
+    .horizontal_wall,.vertical_wall{
+        height: calc( 95vw / 46 );
+        width: calc( 95vw / 46 * 9 );
+
+        position: absolute;
+
+        background-color: rgb(186, 186, 60);
+
+        z-index: 7;
+
+        box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.5);
+    }
+    .vertical_wall{
+        height: calc( 95vw / 46 * 9 );
+        width: calc( 95vw / 46 );
+    }
+    .padding > div:last-child{
+        margin-right: 0;
+    }
+    #table_padd_up > div:last-child{
+        margin-right: 0;
+    }
+
+    #own_player, #ownt_player{
+        margin: 4px;
+        height: calc( (95vw / 46 * 4) - 8px );
+        width: calc( (95vw / 46 * 4) - 8px );
+        /* height: calc( (95vw / 46 * 4) );
+        width: calc( (95vw / 46 * 4) ); */
+
+        background-color: yellow;
+        position: absolute;
+
+        z-index: 8;
+
+        transition: top ease-out .3s, left ease-out .3s;
+    }
+
+    
