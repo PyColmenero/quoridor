@@ -1,0 +1,35 @@
+#free_rooms{
+    padding-top: 2rem;
+}
+    #tittle_fr{
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin: 3rem 0 0 0;
+    }
+    .room{
+        padding: .3rem .6rem;
+        margin-bottom: .5rem;
+
+        border-radius: 5px;
+        border: 1px solid rgb(21, 21, 21);
+        background-color: rgb(26, 26, 26);
+    
+        display: flex;
+        justify-content: space-between;
+        
+        box-shadow:  3px 3px 5px rgba(0, 0, 0, 0.3);
+    }
+        .room > p{
+            margin: 0;
+            color: aliceblue;
+        }
+        .join_button{
+            background-color: rgb(16, 90, 202);
+            color: aliceblue;
+            border-radius: 5px;
+            padding: 0 .6rem;
+        }
+        .join_button:hover{
+            background-color: rgb(0, 53, 133);
+        }

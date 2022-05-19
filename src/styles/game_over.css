@@ -1,0 +1,58 @@
+#gameover{
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    z-index: 20;
+
+    background-color: rgba(240, 248, 255, 1);
+}
+    #gameover > div{
+        width: 100%;
+    }
+        #game_over{
+            width: 100%;
+            padding: 1rem 0;
+            font-size: 2rem;
+            text-align: center;
+
+            background-color: rgba(240, 248, 255, 0.9);
+
+            box-shadow: 5px 5px 2px solid rgb(143, 143, 143);
+        }
+        #play_again{
+            text-align: center;
+            background-color: rgb(35, 35, 35);
+            color: aliceblue;
+            padding: .5rem 1rem;
+            border-radius: 3px;
+
+            max-width: 50%;
+            margin: auto;
+        }
+        #players_list{
+            padding: 1rem;
+            
+            text-align: center;
+        }
+
+
+    .loading_gif{
+    }
+        .loading_gif img{
+            display: block;
+            margin: auto;
+        }
+
+@media screen and (max-aspect-ratio: 7/10) {
+
+    #play_again{
+        width: 90%;
+        max-width: 100%;
+        
+    }
+}
