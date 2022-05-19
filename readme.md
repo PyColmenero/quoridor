@@ -7,7 +7,7 @@
 
 Crea tus propias partidas, privadas para jugar con tus amigos o públicas.
 
-![Create game](./readme/create.png)
+<img src="./readme/create.png" width="50%">
 
 
 Comparte el código de tu partida con tus amigos y cambia la partida a pública para añadir más gente.
