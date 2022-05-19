@@ -7,15 +7,15 @@
 
 Crea tus propias partidas, privadas para jugar con tus amigos o públicas.
 
-<img src="./readme/create.png" width="50%">
+<img src="./readme/create.png" width="50%" style="text-align:center;">
 
 
 Comparte el código de tu partida con tus amigos y cambia la partida a pública para añadir más gente.
 
-![Created game](./readme/created.png)
+<img src="./readme/created.png" width="50%" style="text-align:center;">
 
 
 Únete a las partidas de tus amigos o a cualquiera públicas.
 
-![Join game](./readme/join.png)
+<img src="./readme/join.png" width="50%" style="text-align:center;">
 
